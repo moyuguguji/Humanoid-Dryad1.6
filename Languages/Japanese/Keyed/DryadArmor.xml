@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HD_ModName>Humanoid Dryad</HD_ModName>
+  <HD_ArmorSettings>ドライアド防具表示</HD_ArmorSettings>
+  <HD_Dryad_Basic>基本ドライアド</HD_Dryad_Basic>
+  <HD_Dryad_Woodmaker>ウッドメイカー</HD_Dryad_Woodmaker>
+  <HD_Dryad_Berrymaker>ベリーメイカー</HD_Dryad_Berrymaker>
+  <HD_Dryad_Medicinemaker>メディスンメイカー</HD_Dryad_Medicinemaker>
+  <HD_Dryad_Gaumaker>ゴーメイカー</HD_Dryad_Gaumaker>
+  <HD_Dryad_Carrier>キャリアー</HD_Dryad_Carrier>
+  <HD_Dryad_Clawer>クローアー</HD_Dryad_Clawer>
+  <HD_Dryad_Barkskin>バークスキン</HD_Dryad_Barkskin>
+  <HD_ArmorFooter>変更はすぐに反映されます。</HD_ArmorFooter>
+</LanguageData>

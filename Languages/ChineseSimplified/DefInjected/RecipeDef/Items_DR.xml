@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- RecipeDef -->
+<LanguageData>
+  <!-- EN: Healing -->
+  <D_healing.label>治愈</D_healing.label>
+  <!-- EN: Heals injuries completely. -->
+  <D_healing.description>完全治愈伤势。</D_healing.description>
+  <!-- EN: Healing. -->
+  <D_healing.jobString>治疗中</D_healing.jobString>
+</LanguageData>

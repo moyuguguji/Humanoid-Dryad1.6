@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Humanoid Dryad(Continued)</name>
+	<author>moyuguguji</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.6</li>
+		<li>1.7</li>
+	</supportedVersions>
+	<packageId>moyuguguji.humanoiddryad</packageId>
+	<description>
+Humanoid Dryad 模组的个人移植1.6版本
+Personal port of the Humanoid Dryad mod for version 1.6
+https://steamcommunity.com/workshop/filedetails/?id=3031223525
+——————————————————————————————————————————————————————————————————————
+描述：
+Description:
+此MOD旨在对树精进行一些小幅升级。
+This MOD provides some minor upgrades to Dryads.
+
+　== 注意 ==
+　== Caution ==
+此MOD需要"VanillaExpandedFramework"模组。
+This MOD requires "VanillaExpandedFramework".
+相对于原版,此版本去除了Animal Gear相关内容,衣服现在是纯贴图,可以在配置文件中选择开启或者关闭
+Compared to the original, this version removes Animal Gear content. Clothing is now purely cosmetic and can be toggled in the config file.
+——————————
+-母树纹理调整
+-Gauranlen tree texture adjustments
+-母树可重新移植
+-Gauranlen tree can be replanted
+-母树可以种植在屋顶下
+-Gauranlen tree can be planted under roofs
+-人工建筑物影响为0
+-Building proximity penalty set to 0
+-为母树添加自发光效果（提升夜间修剪效率）
+-Added glow effect to Gauranlen tree (improves nighttime pruning efficiency)
+-调整修剪的声音大小与衰减距离（更加安静）
+-Adjusted pruning sound volume and attenuation distance (quieter)
+——————————
+-树精可以征召
+-Dryads can be drafted
+-树精纹理调整
+-Dryad texture adjustments
+-树精声音大小调整为0
+-Dryad voice volume set to 0
+-树精生产资源（"药草""莓果""木材"）时不再提示
+-Dryads no longer show messages when producing resources (herbal medicine, berries, wood)
+【基础树精】
+[Basic Dryad]
+-心情提升效果:+5~15(最大堆叠次数:10范围:6有效时间12h)
+-Mood boost: +5~15 (max stacks: 10, radius: 6, duration: 12h)
+【运输树精】
+[Carrier Dryad]
+-移动速度:2.3→3.0
+-Move speed: 2.3 → 3.0
+运输能力:50→150
+-Carrying capacity: 50 → 150
+提高休息效率(睡眠时间减少):1→10
+-Rest efficiency (sleep time reduction): 1 → 10
+【盾皮树精】
+[Barkskin Dryad]
+-移动速度:3.2→6.0
+-Move speed: 3.2 → 6.0
+钝器防御(0.40→1.00)
+-Blunt armor: 0.40 → 1.00
+锐器防御(0.70→1.00)
+-Sharp armor: 0.70 → 1.00
+疼痛耐受性:0.8→1.0
+-Pain shock threshold: 0.8 → 1.0
+基础生命:(0.8→2.0)
+-Base health scale: 0.8 → 2.0
+【锐爪树精】
+[Clawer Dryad]
+-移动速度：4→6
+-Move speed: 4 → 6
+疼痛耐性：(0.8→1.0)
+-Pain shock threshold: 0.8 → 1.0
+爪子伤害(18→30)
+-Claw damage: 18 → 30
+冷却时间(1.5→2.0)
+-Cooldown: 1.5 → 2.0
+【产木树精】
+[Woodmaker Dryad]
+追加每5天生产5个"树精毛料"。
+-Produces 5 "Dryad Wool" every 5 days.
+【草药树精】
+[Medicinemaker Dryad]
+追加每4天生成8个"树精花瓣"
+-Produces 8 "Dryad Petals" every 4 days.
+半径6格内存在的pawn的伤口再生速度提高
+-Passive wound regeneration for pawns within 6-tile radius.
+【莓果树精】
+[Berrymaker Dryad]
+追加"树精果果"每1年(60日)生产1个。
+-Produces 1 "Dryad Fruit" every 60 days.
+【共生树精】
+[Gaumaker Dryad]
+追加每1年(60日)生产1个"树精之石"。
+-Produces 1 "Dryad Stone" every 60 days.
+
+追加项目:
+Additional Content:
+
+树精之花
+Dryad Petal
+
+可以提炼中性胺的材料。
+Material that can be refined into Neutroamine.
+
+树精果果
+Dryad Fruit
+
+生食:+20心情持续1年(60天)
+Raw food: +20 mood for 60 days.
+
+树精毛料
+Dryad Wool
+
+比超织物好，非常高性能的布料。
+A very high-performance fabric, surpassing Hyperweave.
+
+树精之石
+Dryad Stone
+
+物品:与"治疗机械液"同等效果。
+Item: Same effect as "Mech Healer Serum".
+
+灵能蜜饯
+Psycho Caramel
+
+药品:专注力完全恢复(速效)效果:心情+10/意识+10%
+Drug: Full Psyfocus recovery (instant). Effects: Mood +10 / Consciousness +10%
+
+副作用和依赖性:有(一天一片是安全的)
+Side effects and addiction: Yes (safe at 1 tablet/day)
+
+请不要给17岁以下的儿童。
+Do not give to children under 17 years of age.
+
+腐殖质种植器
+Plantar
+
+家具:目前还没有功能的装饰用家具。（很好看）
+Furniture: Decorative furniture with no current functionality. (Looks nice)
+
+
+
+追加食谱:
+Additional Recipes:
+
+灵能蜜饯
+Psycho Caramel
+
+研究:
+Research:
+[灵能蜜饯制造]
+[Psycho Caramel Production]
+cost.800
+
+[中性胺制作]
+[Neutroamine Crafting]
+
+前置研究:[药品制造]
+Prerequisite research: [Medicine Production]
+
+[h1]不兼容的模组[/h1]
+[h1]Incompatible Mods[/h1]
+Vanilla Ideology Expanded - Anima Theme
+Vanilla Ideology Expanded - Dryads
+
+[h1]Languages:[/h1]
+English
+Japanese
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3031264953]ChineseSimplified[/url]
+	</description>
+
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Ideology</packageId>
+			<displayName>Ideology</displayName>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
+
+</ModMetaData>

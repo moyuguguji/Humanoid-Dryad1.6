@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DryadArmorConfig>
+  <!--
+    树精护甲外观配置
+    ================
+    设置每种树精是否显示护甲纹理。
+
+    true  = 显示护甲
+    false = 隐藏护甲
+
+    修改后几秒内自动生效，无需重启。
+
+    树精类型:
+      Dryad_Basic        - 基础树精
+      Dryad_Woodmaker    - 产木树精
+      Dryad_Berrymaker   - 产果树精
+      Dryad_Medicinemaker - 制药树精
+      Dryad_Gaumaker     - 噶树树精
+      Dryad_Carrier      - 搬运树精
+      Dryad_Clawer       - 利爪树精
+      Dryad_Barkskin     - 树皮树精
+  -->
+  <Dryad_Basic>true</Dryad_Basic>
+  <Dryad_Woodmaker>true</Dryad_Woodmaker>
+  <Dryad_Berrymaker>true</Dryad_Berrymaker>
+  <Dryad_Medicinemaker>true</Dryad_Medicinemaker>
+  <Dryad_Gaumaker>true</Dryad_Gaumaker>
+  <Dryad_Carrier>true</Dryad_Carrier>
+  <Dryad_Clawer>true</Dryad_Clawer>
+  <Dryad_Barkskin>true</Dryad_Barkskin>
+</DryadArmorConfig>

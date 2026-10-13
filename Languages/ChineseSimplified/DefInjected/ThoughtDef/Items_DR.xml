@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--DryadFruit-->
+  <JuicyFruit.stages.ate_juicy_fruit.label>吃了多汁的水果</JuicyFruit.stages.ate_juicy_fruit.label>
+  <JuicyFruit.stages.ate_juicy_fruit.description>味道又甜又滑，我觉得我肯定是一个"特殊存在"，能吃到这么美味的水果。</JuicyFruit.stages.ate_juicy_fruit.description>
+  <!--PsychoCaramel-->
+  <PsychoCaramelHigh.stages.psycho_caramel.label>吃了健康餐</PsychoCaramelHigh.stages.psycho_caramel.label>
+  <PsychoCaramelHigh.stages.psycho_caramel.description>我非常健康，因为我服用了营养一餐。</PsychoCaramelHigh.stages.psycho_caramel.description>
+  <Cuteplants.stages.aroma_therapy.label>香气治愈</Cuteplants.stages.aroma_therapy.label>
+  <Cuteplants.stages.aroma_therapy.description>被可爱的香气治愈了身心。</Cuteplants.stages.aroma_therapy.description>
+</LanguageData>

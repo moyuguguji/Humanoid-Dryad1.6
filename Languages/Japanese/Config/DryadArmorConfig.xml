@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DryadArmorConfig>
+  <!--
+    ドライアド防具外観設定
+    =====================
+    各ドライアドタイプの防具テクスチャ表示を切り替えます。
+
+    true  = 防具を表示
+    false = 防具を非表示
+
+    変更は数秒以内に自動反映されます。
+
+    ドライアドタイプ:
+      Dryad_Basic        - 基本ドライアド
+      Dryad_Woodmaker    - ウッドメイカー
+      Dryad_Berrymaker   - ベリーメイカー
+      Dryad_Medicinemaker - メディスンメイカー
+      Dryad_Gaumaker     - ゴーメイカー
+      Dryad_Carrier      - キャリアー
+      Dryad_Clawer       - クローアー
+      Dryad_Barkskin     - バークスキン
+  -->
+  <Dryad_Basic>true</Dryad_Basic>
+  <Dryad_Woodmaker>true</Dryad_Woodmaker>
+  <Dryad_Berrymaker>true</Dryad_Berrymaker>
+  <Dryad_Medicinemaker>true</Dryad_Medicinemaker>
+  <Dryad_Gaumaker>true</Dryad_Gaumaker>
+  <Dryad_Carrier>true</Dryad_Carrier>
+  <Dryad_Clawer>true</Dryad_Clawer>
+  <Dryad_Barkskin>true</Dryad_Barkskin>
+</DryadArmorConfig>

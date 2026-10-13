@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "U/LxYEJ30fWQgY+N2fNCueKkgxDvWOudnPCo7srv61S9tJVn5QckgbcsFsrkk2mv1DfjadW0SLHZ5knyi+6rDg==",
+  "success": true,
+  "projectFilePath": "G:\\steam\\steamapps\\common\\RimWorld\\Mods\\Humanoid Dryad1.6\\Source\\HumanoidDryadArmor\\HumanoidDryadArmor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\咕咕稽\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\咕咕稽\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

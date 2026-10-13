@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HD_ModName>Humanoid Dryad</HD_ModName>
+  <HD_ArmorSettings>Dryad Armor Display</HD_ArmorSettings>
+  <HD_Dryad_Basic>Basic dryad</HD_Dryad_Basic>
+  <HD_Dryad_Woodmaker>Woodmaker</HD_Dryad_Woodmaker>
+  <HD_Dryad_Berrymaker>Berrymaker</HD_Dryad_Berrymaker>
+  <HD_Dryad_Medicinemaker>Medicinemaker</HD_Dryad_Medicinemaker>
+  <HD_Dryad_Gaumaker>Gaumaker</HD_Dryad_Gaumaker>
+  <HD_Dryad_Carrier>Carrier</HD_Dryad_Carrier>
+  <HD_Dryad_Clawer>Clawer</HD_Dryad_Clawer>
+  <HD_Dryad_Barkskin>Barkskin</HD_Dryad_Barkskin>
+  <HD_ArmorFooter>Changes apply immediately.</HD_ArmorFooter>
+</LanguageData>

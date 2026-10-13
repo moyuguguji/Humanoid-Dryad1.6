@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--DryadFruit-->
+  <DryadFruit.label>树精果果</DryadFruit.label>
+  <DryadFruit.description>一种非常罕见的果实，可以从树精身上收获。有一个传说如此道来：“吃下它的人会快乐一整年。”(可能吧)</DryadFruit.description>
+  <!--DryadPetal-->
+  <DryadPetal.label>树精花瓣</DryadPetal.label>
+  <DryadPetal.description>树精花\n从花瓣里提取的液体中，可以纯化出与中性胺性质非常相似的物质。\n\n原因还是“未知”。</DryadPetal.description>
+  <!--DryadWool-->
+  <DryadWool.label>树精毛料</DryadWool.label>
+  <DryadWool.description>“树精毛料”是一种非常高性能的布料，具有优异的隔热性与耐寒性，其强度甚至超过了“超织物”。</DryadWool.description>
+  <!--DryadStone-->
+  <DryadStone.label>树精之石</DryadStone.label>
+  <DryadStone.description>一种由树精树脂制成的“琥珀”化石。经证实，口服后它能使受损部位再生并治愈病变。发生这种现象的原因还是个谜。</DryadStone.description>
+  <!--PsychoCaramel-->
+  <PsychoCaramel.label>灵能蜜饯</PsychoCaramel.label>
+  <PsychoCaramel.description>灵能蜜饯是一种被认定为2类药品的便携式医疗食品。\n充分恢复“灵能专注”，腌制食品，能快速补充营养。 \n但是，由于本药品含有精神药物依赖成分，请按照剂量正确服用。 \n\n [用量]:1片/天\n\n [注意] 17岁以下儿童请勿使用。</PsychoCaramel.description>
+  <PsychoCaramel.ingestible.ingestCommandString>摄取 {0}</PsychoCaramel.ingestible.ingestCommandString>
+  <PsychoCaramel.ingestible.ingestReportString>正在摄取 {0}.</PsychoCaramel.ingestible.ingestReportString>
+  <!--Plantar-->
+  <Gomi_Plantar.label>腐殖质种植器</Gomi_Plantar.label>
+  <Gomi_Plantar.description>装饰用一方植物园圃。</Gomi_Plantar.description>
+</LanguageData>

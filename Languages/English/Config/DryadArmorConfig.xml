@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DryadArmorConfig>
+  <!--
+    Dryad Armor Appearance Config
+    =============================
+    Toggle armor texture overlay for each dryad type.
+
+    true  = show armor
+    false = hide armor
+
+    Changes take effect automatically within a few seconds.
+
+    Dryad types:
+      Dryad_Basic        - Basic dryad
+      Dryad_Woodmaker    - Woodmaker
+      Dryad_Berrymaker   - Berrymaker
+      Dryad_Medicinemaker - Medicinemaker
+      Dryad_Gaumaker     - Gaumaker
+      Dryad_Carrier      - Carrier
+      Dryad_Clawer       - Clawer
+      Dryad_Barkskin     - Barkskin
+  -->
+  <Dryad_Basic>true</Dryad_Basic>
+  <Dryad_Woodmaker>true</Dryad_Woodmaker>
+  <Dryad_Berrymaker>true</Dryad_Berrymaker>
+  <Dryad_Medicinemaker>true</Dryad_Medicinemaker>
+  <Dryad_Gaumaker>true</Dryad_Gaumaker>
+  <Dryad_Carrier>true</Dryad_Carrier>
+  <Dryad_Clawer>true</Dryad_Clawer>
+  <Dryad_Barkskin>true</Dryad_Barkskin>
+</DryadArmorConfig>
