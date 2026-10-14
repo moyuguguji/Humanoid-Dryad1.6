@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!--immatureGraphicPath-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/plant/immatureGraphicPath</xpath>
+    <value>
+      <immatureGraphicPath>Things/Plant/GauranlenTreeImmatureex</immatureGraphicPath>
+    </value>
+  </Operation>
+
+  <!--visualSizeRange-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/plant/visualSizeRange</xpath>
+    <value>
+      <visualSizeRange>2.5~3.0</visualSizeRange>
+    </value>
+  </Operation>
+
+  <!--GauranlenLeaf_color-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FleckDef[defName="GauranlenLeaf"]/graphicData/color</xpath>
+    <value>
+      <color>(51, 255, 153, 255)</color>
+      <!-- 黄色<color>(132, 156, 64, 255)</color> -->
+    </value>
+  </Operation>
+
+  <!--GauranlenLeaf_texPath-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FleckDef[defName="GauranlenLeaf"]/graphicData/texPath</xpath>
+    <value>
+      <texPath>Things/Plant/EF/EL</texPath>
+    </value>
+  </Operation>
+
+  <!--Plant_MossGauranlen-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_MossGauranlen"]/plant</xpath>
+    <value>
+      <plant>
+        <fertilityMin>0.05</fertilityMin>
+        <fertilitySensitivity>0</fertilitySensitivity>
+        <sowMinSkill>0</sowMinSkill>
+        <growDays>5</growDays>
+        <visualSizeRange>0.5~1</visualSizeRange>
+        <topWindExposure>0.025</topWindExposure>
+        <allowAutoCut>false</allowAutoCut>
+        <wildClusterWeight>0</wildClusterWeight>
+        <maxMeshCount>9</maxMeshCount>
+        <dieFromToxicFallout>False</dieFromToxicFallout>
+      </plant>
+    </value>
+  </Operation>
+
+  <!--Plant_TreeGauranlen comps: targeted patches instead of full replacement for compatibility-->
+
+  <!--Reduce moss spread radius from 7.9 to 4.2-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_SpawnSubplant"]/maxRadius</xpath>
+    <value>
+      <maxRadius>4.2</maxRadius>
+    </value>
+  </Operation>
+
+  <!--Move spawning pod far off-screen (humanoid dryads don't use pods)-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/spawningPodOffset</xpath>
+    <value>
+      <spawningPodOffset>(100, -20, 0)</spawningPodOffset>
+    </value>
+  </Operation>
+
+  <!--Adjust pod size range-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/spawningPodSizeRange</xpath>
+    <value>
+      <spawningPodSizeRange>0.5~1</spawningPodSizeRange>
+    </value>
+  </Operation>
+
+  <!--Disable building proximity penalty (set curve to 0)-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionLossDailyPerBuildingDistanceCurve</xpath>
+    <value>
+      <connectionLossDailyPerBuildingDistanceCurve>
+        <points>
+          <li>(0,0)</li>
+        </points>
+      </connectionLossDailyPerBuildingDistanceCurve>
+    </value>
+  </Operation>
+
+  <!--CompProperties_Glower-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps</xpath>
+    <value>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8.5</glowRadius>
+        <glowColor>(127,255,212,255)</glowColor>
+      </li>
+    </value>
+  </Operation>
+
+  <!--interferesWithRoof-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/plant</xpath>
+    <value>
+      <interferesWithRoof>false</interferesWithRoof>
+    </value>
+  </Operation>
+
+  <!--minified-->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/minifiedDef</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/minifiedDef</xpath>
+    </match>
+  </Operation>
+
+  <!--Beauty（6）-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/statBases/Beauty</xpath>
+    <value>
+      <Beauty>80</Beauty>
+    </value>    
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/statBases/BeautyOutdoors</xpath>
+    <value>
+      <BeautyOutdoors>80</BeautyOutdoors>
+    </value>
+  </Operation>
+
+  <!--Mass（150）-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/statBases</xpath>
+    <value>
+      <Mass>50</Mass>
+    </value>
+  </Operation>
+
+</Patch>
