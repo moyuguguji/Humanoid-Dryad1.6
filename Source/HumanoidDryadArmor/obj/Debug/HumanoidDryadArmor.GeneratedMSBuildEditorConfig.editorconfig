@@ -1,3 +1,8 @@
 is_global = true
 build_property.RootNamespace = HumanoidDryad
-build_property.ProjectDir = G:\steam\steamapps\common\RimWorld\Mods\Humanoid Dryad1.6\Source\HumanoidDryadArmor\
+build_property.ProjectDir = G:\steam\steamapps\common\Rimworld\Mods\Humanoid Dryad1.6\Source\HumanoidDryadArmor\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

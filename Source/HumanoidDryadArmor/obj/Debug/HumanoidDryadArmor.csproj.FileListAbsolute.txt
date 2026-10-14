@@ -1,9 +1,0 @@
-G:\steam\steamapps\workshop\content\294100\3031223525\Source\HumanoidDryadArmor\obj\Debug\HumanoidDryadArmor.csproj.AssemblyReference.cache
-G:\steam\steamapps\workshop\content\294100\3031223525\Source\HumanoidDryadArmor\obj\Debug\HumanoidDryadArmor.GeneratedMSBuildEditorConfig.editorconfig
-G:\steam\steamapps\workshop\content\294100\3031223525\Source\HumanoidDryadArmor\obj\Debug\HumanoidDryadArmor.AssemblyInfoInputs.cache
-G:\steam\steamapps\workshop\content\294100\3031223525\Source\HumanoidDryadArmor\obj\Debug\HumanoidDryadArmor.AssemblyInfo.cs
-G:\steam\steamapps\workshop\content\294100\3031223525\Source\HumanoidDryadArmor\obj\Debug\HumanoidDryadArmor.csproj.CoreCompileInputs.cache
-G:\steam\steamapps\workshop\content\294100\3031223525\1.6\Assemblies\HumanoidDryadArmor.dll
-G:\steam\steamapps\workshop\content\294100\3031223525\1.6\Assemblies\HumanoidDryadArmor.pdb
-G:\steam\steamapps\workshop\content\294100\3031223525\Source\HumanoidDryadArmor\obj\Debug\HumanoidDryadArmor.dll
-G:\steam\steamapps\workshop\content\294100\3031223525\Source\HumanoidDryadArmor\obj\Debug\HumanoidDryadArmor.pdb

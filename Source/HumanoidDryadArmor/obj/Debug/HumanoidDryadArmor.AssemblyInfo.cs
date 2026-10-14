@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HumanoidDryadArmor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af8305eefb2009d652383af5b18d5090d5c0cdb7")]
 [assembly: System.Reflection.AssemblyProductAttribute("HumanoidDryadArmor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HumanoidDryadArmor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
