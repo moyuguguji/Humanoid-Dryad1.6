@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!--
+    ============================================================================
+    Dryad body art switcher
+    ============================================================================
+
+    The eight dryad castes draw their body from the VANILLA PawnKindDef field
+    PawnKindDef/lifeStages/li/bodyGraphicData/texPath, e.g.
+        Things/Pawn/Animal/Dryad_Basic/Dryad_Basic
+    which resolves to Textures/Things/Pawn/Animal/Dryad_Basic/Dryad_Basic_{east,north,south}.png
+
+    This mod lets the player pick, per caste, between that modern art set and an
+    "Old" set re-rooted from ExTextures/OLD/Animal_OLD into a real content path:
+        Things/Pawn/Animal/OLD/Dryad_Basic/Dryad_Basic
+    (ExTextures/ is not a RimWorld content root, so nothing inside it is loadable
+    by a texPath. See Source/.../DryadSkin.cs for the full reasoning.)
+
+    The switch itself happens in C#, not here. This patch only REPLACES the render
+    node class of the Body node on the Animal render tree, so that our subclass gets
+    consulted. The vanilla worker class is deliberately left alone, which keeps head
+    offsets, useRottenColor, dessicated/rotting handling, layering, and the
+    Wounds/Pack/Firefoam child nodes exactly as vanilla.
+
+    Core tree reference:
+      Data/Core/Defs/PawnRenderTreeDefs/PawnRenderTreeDefs.xml
+        PawnRenderTreeDef defName="Animal"  -> root/children/li[tagDef="Body"]
+  -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnRenderTreeDef[defName="Animal"]/root/children/li[tagDef="Body"]/nodeClass</xpath>
+    <value>
+      <nodeClass>HumanoidDryad.PawnRenderNode_DryadBody</nodeClass>
+    </value>
+  </Operation>
+
+</Patch>

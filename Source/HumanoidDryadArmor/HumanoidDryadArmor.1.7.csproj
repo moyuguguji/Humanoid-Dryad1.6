@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>HumanoidDryadArmor</AssemblyName>
+    <RootNamespace>HumanoidDryad</RootNamespace>
+    <!-- RimWorld 1.7 (Waylith/CoreCLR) assembly goes into the 1.7/ version folder. -->
+    <OutputPath>..\..\1.7\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <LangVersion>9.0</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <NoWarn>$(NoWarn);CS0649</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="*.cs" />
+  </ItemGroup>
+
+  <!--
+    RimWorld 1.7 is a CoreCLR/Waylith build: game assemblies live in the install ROOT
+    (RimWorldWin64_Data\Managed no longer exists) and the entire UnityEngine surface is
+    replaced by the single UnityStubs.dll compatibility assembly.
+    This assembly MUST NOT be used in 1.6: loading it there throws
+    "VTable setup of type HumanoidDryad.HumanoidDryadMod failed".
+  -->
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == ''">G:\steam\steamapps\common\RimWorld</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityStubs">
+      <HintPath>$(GameDir)\UnityStubs.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

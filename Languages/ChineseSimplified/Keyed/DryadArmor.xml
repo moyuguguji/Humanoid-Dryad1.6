@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <HD_ModName>人形树精</HD_ModName>
-  <HD_ArmorSettings>树精护甲显示</HD_ArmorSettings>
+  <HD_ArmorSettings>启用树精衣服显示</HD_ArmorSettings>
   <HD_Dryad_Basic>基础树精</HD_Dryad_Basic>
   <HD_Dryad_Woodmaker>供木树精</HD_Dryad_Woodmaker>
   <HD_Dryad_Berrymaker>蜜果树精</HD_Dryad_Berrymaker>
@@ -10,5 +10,15 @@
   <HD_Dryad_Carrier>协运树精</HD_Dryad_Carrier>
   <HD_Dryad_Clawer>利爪树精</HD_Dryad_Clawer>
   <HD_Dryad_Barkskin>盾皮树精</HD_Dryad_Barkskin>
-  <HD_ArmorFooter>修改立刻生效。</HD_ArmorFooter>
+  <HD_ArmorFooter></HD_ArmorFooter>
+
+  <HD_SkinSettings>启用树精旧版贴图，不支持衣服显示</HD_SkinSettings>
+  <HD_Skin_Dryad_Basic>基础树精</HD_Skin_Dryad_Basic>
+  <HD_Skin_Dryad_Woodmaker>供木树精</HD_Skin_Dryad_Woodmaker>
+  <HD_Skin_Dryad_Berrymaker>蜜果树精</HD_Skin_Dryad_Berrymaker>
+  <HD_Skin_Dryad_Medicinemaker>药师树精</HD_Skin_Dryad_Medicinemaker>
+  <HD_Skin_Dryad_Gaumaker>共生树精</HD_Skin_Dryad_Gaumaker>
+  <HD_Skin_Dryad_Carrier>协运树精</HD_Skin_Dryad_Carrier>
+  <HD_Skin_Dryad_Clawer>利爪树精</HD_Skin_Dryad_Clawer>
+  <HD_Skin_Dryad_Barkskin>盾皮树精</HD_Skin_Dryad_Barkskin>
 </LanguageData>

@@ -1,0 +1,17 @@
+# ---- .NET build output (never ship these) ----
+bin/
+obj/
+*.deps.json
+*.runtimeconfig.json
+
+# ---- local scratch ----
+*.log
+*.bak
+*.tmp
+*~
+
+# ---- IDE / editor ----
+.vs/
+.idea/
+*.user
+*.suo

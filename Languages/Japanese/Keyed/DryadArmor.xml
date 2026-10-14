@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <HD_ModName>Humanoid Dryad</HD_ModName>
-  <HD_ArmorSettings>ドライアド防具表示</HD_ArmorSettings>
+  <HD_ArmorSettings>ドライアド衣服表示を有効化</HD_ArmorSettings>
   <HD_Dryad_Basic>基本ドライアド</HD_Dryad_Basic>
   <HD_Dryad_Woodmaker>ウッドメイカー</HD_Dryad_Woodmaker>
   <HD_Dryad_Berrymaker>ベリーメイカー</HD_Dryad_Berrymaker>
@@ -10,5 +10,15 @@
   <HD_Dryad_Carrier>キャリアー</HD_Dryad_Carrier>
   <HD_Dryad_Clawer>クローアー</HD_Dryad_Clawer>
   <HD_Dryad_Barkskin>バークスキン</HD_Dryad_Barkskin>
-  <HD_ArmorFooter>変更はすぐに反映されます。</HD_ArmorFooter>
+  <HD_ArmorFooter></HD_ArmorFooter>
+
+  <HD_SkinSettings>ドライアド旧版テクスチャを有効化、衣服表示なし</HD_SkinSettings>
+  <HD_Skin_Dryad_Basic>基本ドライアド</HD_Skin_Dryad_Basic>
+  <HD_Skin_Dryad_Woodmaker>ウッドメイカー</HD_Skin_Dryad_Woodmaker>
+  <HD_Skin_Dryad_Berrymaker>ベリーメイカー</HD_Skin_Dryad_Berrymaker>
+  <HD_Skin_Dryad_Medicinemaker>メディスンメイカー</HD_Skin_Dryad_Medicinemaker>
+  <HD_Skin_Dryad_Gaumaker>ゴーメイカー</HD_Skin_Dryad_Gaumaker>
+  <HD_Skin_Dryad_Carrier>キャリアー</HD_Skin_Dryad_Carrier>
+  <HD_Skin_Dryad_Clawer>クローアー</HD_Skin_Dryad_Clawer>
+  <HD_Skin_Dryad_Barkskin>バークスキン</HD_Skin_Dryad_Barkskin>
 </LanguageData>

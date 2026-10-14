@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>HumanoidDryadArmor</AssemblyName>
+    <RootNamespace>HumanoidDryad</RootNamespace>
+    <!-- RimWorld 1.6 (Unity/Mono) assembly goes into the 1.6/ version folder. -->
+    <OutputPath>..\..\1.6\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <LangVersion>9.0</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <NoWarn>$(NoWarn);CS0649</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+  </ItemGroup>
+
+  <!--
+    RimWorld 1.6 is a Unity/Mono build: game assemblies live in RimWorldWin64_Data\Managed
+    and UnityEngine is split into its usual module DLLs.
+    This assembly MUST NOT be used in 1.7, and the 1.7 one must not be used here: the two
+    runtimes (Mono vs CoreCLR) and the UnityEngine surface differ, and loading the wrong
+    one throws "VTable setup of type HumanoidDryad.HumanoidDryadMod failed" at mod
+    construction, which silently removes the whole settings page.
+  -->
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == ''">G:\steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Widgets.ButtonText / Listing_Standard need the IMGUI module -->
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(GameDir)\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- TextAnchor (used by Widgets.Label) lives in the TextRendering module -->
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(GameDir)\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -27,4 +27,26 @@
   <Dryad_Carrier>true</Dryad_Carrier>
   <Dryad_Clawer>true</Dryad_Clawer>
   <Dryad_Barkskin>true</Dryad_Barkskin>
+
+  <!--
+    Dryad Old Body Art  (feature added by this copy)
+    ================================================
+    true  = use the OLD body art   (clothing display is NOT supported: the armour
+                                    overlay for that caste is hidden automatically)
+    false = use the modern body art (default)
+
+    Each caste is switched independently.
+
+    NOTE: this file is DOCUMENTATION ONLY and is never read at runtime.
+    The real setting lives in Options -> Mod settings -> Humanoid Dryad and is
+    written by RimWorld into Config/Mod_*.xml.
+  -->
+  <OldBody_Dryad_Basic>false</OldBody_Dryad_Basic>
+  <OldBody_Dryad_Woodmaker>false</OldBody_Dryad_Woodmaker>
+  <OldBody_Dryad_Berrymaker>false</OldBody_Dryad_Berrymaker>
+  <OldBody_Dryad_Medicinemaker>false</OldBody_Dryad_Medicinemaker>
+  <OldBody_Dryad_Gaumaker>false</OldBody_Dryad_Gaumaker>
+  <OldBody_Dryad_Carrier>false</OldBody_Dryad_Carrier>
+  <OldBody_Dryad_Clawer>false</OldBody_Dryad_Clawer>
+  <OldBody_Dryad_Barkskin>false</OldBody_Dryad_Barkskin>
 </DryadArmorConfig>
