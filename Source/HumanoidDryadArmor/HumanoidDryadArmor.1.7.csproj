@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>HumanoidDryadArmor</AssemblyName>
+    <RootNamespace>HumanoidDryad</RootNamespace>
+    <LangVersion>9.0</LangVersion>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- RimWorld 1.7 on the Waylith runtime -->
+    <OutputPath>..\..\1.7\Assemblies</OutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <NoWarn>$(NoWarn);CS0649</NoWarn>
+    <AssemblySearchPaths>$(AssemblySearchPaths);{HintPathFromItem}</AssemblySearchPaths>
+  </PropertyGroup>
+
+  <!--
+    The Waylith runtime keeps its assemblies in the game root instead of
+    RimWorldWin64_Data\Managed: Assembly-CSharp.dll is the game/mod API and
+    UnityStubs.dll supplies the UnityEngine types (UnityEngine.Rect, Color, ...).
+    Override GameDir to build against another Waylith install.
+  -->
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == ''">G:\steam\steamapps\common\RimWorld</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityStubs">
+      <HintPath>$(GameDir)\UnityStubs.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Waylith.UnityCompat">
+      <HintPath>$(GameDir)\Waylith.UnityCompat.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

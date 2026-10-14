@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HD_TextureStyleHeader>贴图风格</HD_TextureStyleHeader>
+  <HD_StyleTree>母树造型</HD_StyleTree>
+  <HD_StyleTree_0>默认（圆冠）</HD_StyleTree_0>
+  <HD_StyleTree_1>备选一・带阴影</HD_StyleTree_1>
+  <HD_StyleTree_2>备选二・竹叶</HD_StyleTree_2>
+  <HD_StyleMoss>苔藓贴图</HD_StyleMoss>
+  <HD_StyleMoss_0>默认</HD_StyleMoss_0>
+  <HD_StyleMoss_1>备选</HD_StyleMoss_1>
+  <HD_StyleDebris>碎叶贴图</HD_StyleDebris>
+  <HD_StyleDebris_0>默认</HD_StyleDebris_0>
+  <HD_StyleDebris_1>备选</HD_StyleDebris_1>
+  <HD_StyleLeaf>飘叶特效</HD_StyleLeaf>
+  <HD_StyleLeaf_0>长叶（默认）</HD_StyleLeaf_0>
+  <HD_StyleLeaf_1>圆叶</HD_StyleLeaf_1>
+  <HD_StyleLeaf_2>备选</HD_StyleLeaf_2>
+  <HD_TextureStyleFooter>点箭头切换；切换后立即生效，若地图画面未刷新，切换地图或重载存档即可。</HD_TextureStyleFooter>
+</LanguageData>

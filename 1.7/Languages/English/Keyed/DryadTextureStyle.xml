@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HD_TextureStyleHeader>Texture style</HD_TextureStyleHeader>
+  <HD_StyleTree>Gauranlen tree</HD_StyleTree>
+  <HD_StyleTree_0>Default (round canopy)</HD_StyleTree_0>
+  <HD_StyleTree_1>Alt 1 - shaded</HD_StyleTree_1>
+  <HD_StyleTree_2>Alt 2 - bamboo leaf</HD_StyleTree_2>
+  <HD_StyleMoss>Gauranlen moss</HD_StyleMoss>
+  <HD_StyleMoss_0>Default</HD_StyleMoss_0>
+  <HD_StyleMoss_1>Alternative</HD_StyleMoss_1>
+  <HD_StyleDebris>Gauranlen debris</HD_StyleDebris>
+  <HD_StyleDebris_0>Default</HD_StyleDebris_0>
+  <HD_StyleDebris_1>Alternative</HD_StyleDebris_1>
+  <HD_StyleLeaf>Falling leaf fleck</HD_StyleLeaf>
+  <HD_StyleLeaf_0>Long leaf (default)</HD_StyleLeaf_0>
+  <HD_StyleLeaf_1>Round leaf</HD_StyleLeaf_1>
+  <HD_StyleLeaf_2>Alternative</HD_StyleLeaf_2>
+  <HD_TextureStyleFooter>Click the arrows to switch. Applied immediately; if the map does not refresh, switch maps or reload the save.</HD_TextureStyleFooter>
+</LanguageData>

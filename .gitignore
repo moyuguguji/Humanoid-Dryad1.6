@@ -1,0 +1,22 @@
+# ---- RimWorld mod packaging ----
+# Only the runtime artefacts belong in the repo: Defs, Languages, Patches,
+# Assemblies, Textures/Assets.zip and About.
+# Everything below is local build/dev output.
+
+# .NET build output (never ship these)
+bin/
+obj/
+*.deps.json
+*.runtimeconfig.json
+
+# Local scratch
+*.log
+*.bak
+*.tmp
+*~
+
+# IDE / editor
+.vs/
+.idea/
+*.user
+*.suo

@@ -13,7 +13,7 @@ namespace HumanoidDryad
         public HumanoidDryadMod(ModContentPack content) : base(content)
         {
             Instance = this;
-            GetSettings<DryadArmorSettings>();
+            DryadArmorSettings.Current = GetSettings<DryadArmorSettings>();
         }
 
         public override string SettingsCategory()
@@ -42,6 +42,9 @@ namespace HumanoidDryad
             DrawCheckbox(ref settings.Dryad_Clawer, "HD_Dryad_Clawer".Translate());
             DrawCheckbox(ref settings.Dryad_Barkskin, "HD_Dryad_Barkskin".Translate());
 
+            // Texture style section (same window, ET Homunculus style rows).
+            DryadTextureStyles.DrawSettings(list, settings);
+
             list.Gap();
             list.Label("HD_ArmorFooter".Translate());
             list.End();
@@ -65,6 +68,9 @@ namespace HumanoidDryad
 
     public class DryadArmorSettings : ModSettings
     {
+        /// <summary>The single live settings instance, so other helpers can read it.</summary>
+        public static DryadArmorSettings Current;
+
         public bool Dryad_Basic = true;
         public bool Dryad_Woodmaker = true;
         public bool Dryad_Berrymaker = true;
@@ -73,6 +79,12 @@ namespace HumanoidDryad
         public bool Dryad_Carrier = true;
         public bool Dryad_Clawer = true;
         public bool Dryad_Barkskin = true;
+
+        // Texture style indices (see DryadTextureStyles for the option tables).
+        public int StyleTree;
+        public int StyleMoss;
+        public int StyleDebris;
+        public int StyleLeaf;
 
         public override void ExposeData()
         {
@@ -84,12 +96,19 @@ namespace HumanoidDryad
             Scribe_Values.Look(ref Dryad_Carrier, "Dryad_Carrier", true);
             Scribe_Values.Look(ref Dryad_Clawer, "Dryad_Clawer", true);
             Scribe_Values.Look(ref Dryad_Barkskin, "Dryad_Barkskin", true);
+
+            Scribe_Values.Look(ref StyleTree, "StyleTree", 0);
+            Scribe_Values.Look(ref StyleMoss, "StyleMoss", 0);
+            Scribe_Values.Look(ref StyleDebris, "StyleDebris", 0);
+            Scribe_Values.Look(ref StyleLeaf, "StyleLeaf", 0);
+
             Apply();
         }
 
         public void Apply()
         {
             DryadArmorConfig.SetFromSettings(this);
+            DryadTextureStyles.Apply(this);
         }
     }
 

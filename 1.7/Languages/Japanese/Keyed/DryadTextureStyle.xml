@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HD_TextureStyleHeader>テクスチャスタイル</HD_TextureStyleHeader>
+  <HD_StyleTree>ゴーラン樹の外観</HD_StyleTree>
+  <HD_StyleTree_0>デフォルト（丸い樹冠）</HD_StyleTree_0>
+  <HD_StyleTree_1>代替1・影付き</HD_StyleTree_1>
+  <HD_StyleTree_2>代替2・笹葉</HD_StyleTree_2>
+  <HD_StyleMoss>ゴーラン苔</HD_StyleMoss>
+  <HD_StyleMoss_0>デフォルト</HD_StyleMoss_0>
+  <HD_StyleMoss_1>代替</HD_StyleMoss_1>
+  <HD_StyleDebris>ゴーラン木くず</HD_StyleDebris>
+  <HD_StyleDebris_0>デフォルト</HD_StyleDebris_0>
+  <HD_StyleDebris_1>代替</HD_StyleDebris_1>
+  <HD_StyleLeaf>舞い落ちる葉</HD_StyleLeaf>
+  <HD_StyleLeaf_0>長い葉（デフォルト）</HD_StyleLeaf_0>
+  <HD_StyleLeaf_1>丸い葉</HD_StyleLeaf_1>
+  <HD_StyleLeaf_2>代替</HD_StyleLeaf_2>
+  <HD_TextureStyleFooter>矢印で切り替え。変更はすぐ反映されます。反映されない場合はマップ切り替えかセーブ再読込を。</HD_TextureStyleFooter>
+</LanguageData>
